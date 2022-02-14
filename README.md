@@ -4,6 +4,7 @@
 .oneTime in `navigationController`
 
 ![NavigationProgress Demo - One Time][NPLooks-OneTime]
+
 .always in `navigationController` from modal view
 
 ![NavigationProgress Demo - Always][NPLooks-Always]
@@ -13,18 +14,6 @@
 - Swift 5.0+
 
 ### Installation
-
-Add this project on your `Package.swift`
-
-```swift
-import PackageDescription
-
-let package = Package(
-    dependencies: [
-        .Package(url: "https://github.com/user/project.git", majorVersion: 0, minor: 0)
-    ]
-)
-```
 
 #### Swift Package Manager
 The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but Gradient Progress Bar does support its use on supported platforms.
