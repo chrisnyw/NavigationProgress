@@ -1,6 +1,9 @@
 # NavigationProgress
 > A simple UIProgressView attachs to top of UINavigationController
 
+[![SwiftVersion](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fchrisnyw%2FNavigationProgress%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/chrisnyw/NavigationProgress)
+[![Platform](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fchrisnyw%2FNavigationProgress%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/chrisnyw/NavigationProgress)
+
 .oneTime in `navigationController`
 
 ![NavigationProgress Demo - One Time][NPLooks-OneTime]
@@ -10,7 +13,7 @@
 ![NavigationProgress Demo - Always][NPLooks-Always]
 
 ### Requirements
-- iOS 13+
+- iOS 10+
 - Swift 5.0+
 
 ### Installation
