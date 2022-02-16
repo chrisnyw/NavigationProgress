@@ -1,19 +1,31 @@
 # NavigationProgress
-> A simple UIProgressView attachs to top of UINavigationController
 
 [![SwiftVersion](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fchrisnyw%2FNavigationProgress%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/chrisnyw/NavigationProgress)
 [![Platform](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fchrisnyw%2FNavigationProgress%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/chrisnyw/NavigationProgress)
+
+> A simple UIProgressView attachs to top of UINavigationController
+```swift
+import NavigationProgress
+
+NavigationProgress.setup()
+startNavigationProgress(with: NavigationProgress(totalPages: 3))
+```
+
+All done, and you can have this:
+![sample][sample]
+
+---
 
 |                            | .oneTime | .always |
 |----------------------------|:--------:|:-------:|
 | push                       |     ![][pushOneTime]     |     ![][pushAlways]     |
 | present fullscreen         |     ![][fullscreenOneTime]     |     ![][fullscreenAlways]      |
 | present overCurrentContext |     ![][overCurrentContextOneTime]     |     ![][overCurrentContextAlways]     |
-
+---
 ### Requirements
 - iOS 10+
 - Swift 5.0+
-
+---
 ### Installation
 
 #### Swift Package Manager
@@ -26,7 +38,7 @@ dependencies: [
     .package(url: "https://github.com/chrisnyw/NavigationProgress", from: "0.2")
 ]
 ```
-
+---
 ### How to use
 #### - Import NavigationProgress
 Import `NavigationProgress` when you need.
@@ -49,7 +61,7 @@ Force remove the existing NavigationProgress from your navigationController
 ```swift
 removeNavigationProgress()
 ```
-
+---
 ### Configuration
 
 #### - Object NavigationProgress
@@ -100,10 +112,11 @@ Adjusts animation duration for show / hide NavigationProgress once it is added o
 ```swift
 navigationProgress.animationDuration = 0.3
 ```
-
+---
 ### Author
-Chris Ng (chrisnyw(@)gmail.com)
+Chris Ng (chrisnyw@gmail.com)
 
+---
 ### License
 NavigationProgress is available under the MIT license. See the LICENSE file for more info.
 
@@ -113,4 +126,4 @@ NavigationProgress is available under the MIT license. See the LICENSE file for 
 [fullscreenOneTime]: Assets/fullscreenOneTime.gif
 [overCurrentContextAlways]: Assets/overCurrentContextAlways.gif
 [overCurrentContextOneTime]: Assets/overCurrentContextOneTime.gif
-
+[sample]: Assets/sample.png
