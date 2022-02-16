@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hhh-22-BOL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Push View Controller-->
+        <scene sceneID="r4x-za-yVq">
+            <objects>
+                <viewController storyboardIdentifier="PushVC" interfaceStyle="light" id="9OV-QU-4gp" customClass="PushViewController" customModule="NavigationProgressDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f1Q-Tf-Szd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="225" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ST6-zX-6Us">
+                                <rect key="frame" x="20" y="88" width="374" height="225"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcO-TW-Fyt">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OneTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uz-J8-zUb">
+                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yjp-5s-nKM">
+                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="np_OneTimeSwitch"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rB7-Tt-64b" userLabel="Start From Stepper Row" customClass="StepperRow" customModule="NavigationProgressDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="39" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Start From Page:"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzX-ue-UAR" userLabel="Total Page Stepper Row" customClass="StepperRow" customModule="NavigationProgressDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="97" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Total Pages:"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4NS-iW-r1w">
+                                        <rect key="frame" x="0.0" y="155" width="374" height="32"/>
+                                        <segments>
+                                            <segment title="push"/>
+                                            <segment title="fullscreen"/>
+                                            <segment title="overCurrentContext"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZw-vg-68K">
+                                        <rect key="frame" x="112.5" y="194" width="149.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Push or Present VC"/>
+                                        <connections>
+                                            <action selector="pushButtonDidPressed:" destination="9OV-QU-4gp" eventType="touchUpInside" id="gsD-ee-HJn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HcO-TW-Fyt" secondAttribute="trailing" id="624-8P-mji"/>
+                                    <constraint firstItem="rB7-Tt-64b" firstAttribute="leading" secondItem="ST6-zX-6Us" secondAttribute="leading" id="EI3-a6-RQz"/>
+                                    <constraint firstAttribute="trailing" secondItem="4NS-iW-r1w" secondAttribute="trailing" id="Jl4-MS-9Ee"/>
+                                    <constraint firstAttribute="trailing" secondItem="rB7-Tt-64b" secondAttribute="trailing" id="KFA-cc-hJh"/>
+                                    <constraint firstItem="HcO-TW-Fyt" firstAttribute="leading" secondItem="ST6-zX-6Us" secondAttribute="leading" id="Nfl-Wd-joY"/>
+                                    <constraint firstItem="JzX-ue-UAR" firstAttribute="leading" secondItem="ST6-zX-6Us" secondAttribute="leading" id="RA4-Dx-Msg"/>
+                                    <constraint firstItem="4NS-iW-r1w" firstAttribute="leading" secondItem="ST6-zX-6Us" secondAttribute="leading" id="YCC-BG-bvX"/>
+                                    <constraint firstAttribute="trailing" secondItem="JzX-ue-UAR" secondAttribute="trailing" id="kfa-JE-b2j"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BtO-Ke-moQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ST6-zX-6Us" firstAttribute="leading" secondItem="BtO-Ke-moQ" secondAttribute="leading" constant="20" id="6rT-Jd-KTQ"/>
+                            <constraint firstItem="ST6-zX-6Us" firstAttribute="top" secondItem="BtO-Ke-moQ" secondAttribute="top" id="PPj-pn-zb5"/>
+                            <constraint firstItem="BtO-Ke-moQ" firstAttribute="trailing" secondItem="ST6-zX-6Us" secondAttribute="trailing" constant="20" id="p0c-Fz-iPD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gAy-Dg-lZg"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="oneTimeSwitch" destination="Yjp-5s-nKM" id="L7M-pv-UyE"/>
+                        <outlet property="oneTimeSwitchRow" destination="HcO-TW-Fyt" id="lQu-yT-diY"/>
+                        <outlet property="presentModeSegmentControl" destination="4NS-iW-r1w" id="Jhl-JZ-u5s"/>
+                        <outlet property="startFromStepper" destination="rB7-Tt-64b" id="CQs-Tc-rmT"/>
+                        <outlet property="totalPagesStepper" destination="JzX-ue-UAR" id="Fj1-Kz-LoE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyU-JN-5sq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813.04347826086962" y="774.77678571428567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ijx-Qn-PAF">
+            <objects>
+                <navigationController storyboardIdentifier="NavVC" id="hhh-22-BOL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fnA-vX-CBl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9OV-QU-4gp" kind="relationship" relationship="rootViewController" id="Vb1-rp-WcI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTu-wV-KzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107" y="775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

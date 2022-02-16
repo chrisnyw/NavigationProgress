@@ -4,13 +4,11 @@
 [![SwiftVersion](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fchrisnyw%2FNavigationProgress%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/chrisnyw/NavigationProgress)
 [![Platform](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fchrisnyw%2FNavigationProgress%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/chrisnyw/NavigationProgress)
 
-.oneTime in `navigationController`
-
-![NavigationProgress Demo - One Time][NPLooks-OneTime]
-
-.always in `navigationController` from modal view
-
-![NavigationProgress Demo - Always][NPLooks-Always]
+|                            | .oneTime | .always |
+|----------------------------|:--------:|:-------:|
+| push                       |     ![][pushOneTime]     |     ![][pushAlways]     |
+| present fullscreen         |     ![][fullscreenOneTime]     |     ![][fullscreenAlways]      |
+| present overCurrentContext |     ![][overCurrentContextOneTime]     |     ![][overCurrentContextAlways]     |
 
 ### Requirements
 - iOS 10+
@@ -109,5 +107,10 @@ Chris Ng (chrisnyw(@)gmail.com)
 ### License
 NavigationProgress is available under the MIT license. See the LICENSE file for more info.
 
-[NPLooks-OneTime]: Assets/NPLooksOneTime.gif
-[NPLooks-Always]: Assets/NPLooksAlways.gif
+[pushAlways]: Assets/pushAlways.gif
+[pushOneTime]: Assets/pushOneTime.gif
+[fullscreenAlways]: Assets/fullscreenAlways.gif
+[fullscreenOneTime]: Assets/fullscreenOneTime.gif
+[overCurrentContextAlways]: Assets/overCurrentContextAlways.gif
+[overCurrentContextOneTime]: Assets/overCurrentContextOneTime.gif
+
