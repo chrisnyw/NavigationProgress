@@ -23,7 +23,7 @@ Once you have your Swift package set up, adding Gradient Progress Bar as a depen
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/chrisnyw/NavigationProgress", from: "0.1")
+    .package(url: "https://github.com/chrisnyw/NavigationProgress", from: "0.2")
 ]
 ```
 
