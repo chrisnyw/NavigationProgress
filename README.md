@@ -2,8 +2,9 @@
 
 [![SwiftVersion](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fchrisnyw%2FNavigationProgress%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/chrisnyw/NavigationProgress)
 [![Platform](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fchrisnyw%2FNavigationProgress%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/chrisnyw/NavigationProgress)
+[![License: MIT](https://img.shields.io/github/license/chrisnyw/NavigationProgress?label=License)](https://img.shields.io/github/license/chrisnyw/NavigationProgress?label=License)
 
-> A simple UIProgressView attachs to top of UINavigationController
+> A simple way to make UIProgressView attach to top of UINavigationController.
 ```swift
 import NavigationProgress
 
