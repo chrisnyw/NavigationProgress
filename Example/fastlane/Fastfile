@@ -1,0 +1,14 @@
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Run tests in example project"
+  lane :runAllTests do
+    scan(
+      scheme: "NavigationProgressDemo",
+      device: "iPhone 13",
+    )
+  end
+end
