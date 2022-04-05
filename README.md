@@ -30,9 +30,9 @@ All done, and you can have this:
 ### Installation
 
 #### Swift Package Manager
-The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but Gradient Progress Bar does support its use on supported platforms.
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
 
-Once you have your Swift package set up, adding Gradient Progress Bar as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+Once you have your Swift package set up, adding NavigationProgress as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
 
 ```swift
 dependencies: [
